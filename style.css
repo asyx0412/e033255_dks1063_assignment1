@@ -1,0 +1,204 @@
+/* General Page Styling */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #8bcbf8, #dceeff);
+    color: #222;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #1E2761;
+    font-size: 2.2rem;
+}
+
+/* Navbar */
+.navbar {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.navbar ul {
+    list-style: none;
+    background-color: #1E2761;
+    padding: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    display: inline-block;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    display: block;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+    background-color: #408EC6;
+    border-radius: 8px;
+}
+
+/* Add New Activity link styled as a button */
+p a {
+    display: inline-block;
+    margin-left: 20px;
+    background: #1E2761;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+p a:hover {
+    background: #408EC6;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 12px;
+    width: 280px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #1E2761;
+}
+
+.card p {
+    margin: 0 0 10px;
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.4;
+}
+
+.card .actions a {
+    margin-right: 12px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.card .actions a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+/* About Box */
+.about-text {
+    background-color: #7A2048;
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    max-width: 90%;
+    margin: 20px auto;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.about-text:hover {
+    background: linear-gradient(145deg, #b34f7c, #8a546d);
+    transform: translateY(-5px);
+}
+
+/* Image Gallery */
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px auto;
+}
+
+.image-container img {
+    width: 160px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
+    transform: scale(1.1);
+}
+
+/* Tables */
+table {
+    width: 1000px;
+    border-collapse: collapse;
+    margin: 30px auto;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 14px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background-color: #7A2048;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+td {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Table Header Title */
+.table-header {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #1E2761;
+}

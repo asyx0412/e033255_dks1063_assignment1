@@ -1,0 +1,292 @@
+/* General Page Styling */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #0a0f2c, #1E2761);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #ffffff;
+    font-size: 2.2rem;
+}
+
+/* Navbar - compact version */
+.navbar {
+    text-align: center;
+    margin: 20px auto;               /* center navbar and reduce space */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(30, 39, 97, 0.6);
+    padding: 15px 0;                  /* smaller padding */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    max-width: 850px;                /* limit navbar width */
+    transition: all 0.3s ease;
+}
+
+.navbar:hover {
+    background: rgba(30, 39, 97, 0.85);
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 12px;                        /* reduce spacing between items */
+}
+
+.navbar li {
+    display: inline-block;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 15px;                /* smaller padding */
+    font-weight: 600;
+    font-size: 0.9rem;                /* smaller font */
+    border-radius: 6px;               /* slightly smaller corners */
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #408EC6;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
+.navbar a:hover {
+    background-color: rgba(64, 142, 198, 0.3);
+    color: #fff;
+    transform: scale(1.03);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.25);
+}
+
+.navbar a:active {
+    transform: scale(0.98);
+}
+
+/* Add New Activity link styled as a button */
+p a {
+    display: inline-block;
+    margin-left: 20px;
+    background: #1E2761;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+p a:hover {
+    background: #408EC6;
+}
+
+/* Card Container */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 12px;
+    width: 280px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transition: transform 0.2s, box-shadow 0.2s, background 0.3s;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.card img {
+    display: block;
+    margin: 0 auto 12px;
+    max-width: 90%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.card img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+    filter: brightness(1.1);
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.card p {
+    margin: 0 0 10px;
+    font-size: 0.95rem;
+    color: #fff;
+    line-height: 1.4;
+}
+
+.card .actions a {
+    margin-right: 12px;
+    text-decoration: none;
+    color: #aad4ff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.card .actions a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* About Box */
+.about-text {
+    background: rgba(122, 32, 72, 0.7);
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+    max-width: 90%;
+    margin: 20px auto;
+    font-size: 1.1em;
+    line-height: 1.6;
+    text-align: center;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.about-text:hover {
+    background: rgba(179, 79, 124, 0.8);
+    transform: translateY(-5px);
+}
+
+/* Tables */
+table {
+    width: 1000px;
+    border-collapse: collapse;
+    margin: 30px auto;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+th, td {
+    padding: 14px;
+    border: 1px solid rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+th {
+    background-color: rgba(122, 32, 72, 0.85);
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+td {
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Table Header Title */
+.table-header {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 50px;
+    color: #1E2761;
+}
+
+.add-button {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.add-button a {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #1E2761;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.add-button a:hover {
+    background: #408EC6;
+    transform: translateY(-3px);
+}
+
+/* Links */
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1f4b69;
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #fff;
+}
+
+a:active {
+    color: #164c83;
+}
+
+.admin-box {
+    max-width: 700px;          /* optional: limit width */
+    margin: 50px auto;          /* this centers horizontally */
+    padding: 30px;
+    background: rgba(64, 79, 126, 0.7);
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
